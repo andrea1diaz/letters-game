@@ -11,9 +11,11 @@ const Tile = (props) => {
         }
     })
 
+    console.log(props.valid, selected && props.valid)
+
     return (
         <div
-            className={`tile item ${selected ? 'active' : ''}`}
+            className={`tile item ${selected && props.valid ? 'active' : selected && !props.valid ? 'selected' : ''}`}
             style={{cursor: `${props.isNeighbor && !selected ? 'pointer' : 'unset'}`}}
             key={props.index}
             onClick={() => {
@@ -55,6 +57,7 @@ const Board = (props) => {
                         index={index}
                         onClick={() => props.handleClick(index)}
                         selected={props.selected}
+                        valid={props.valid}
                     />
                 )
             })}

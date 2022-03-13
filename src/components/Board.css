@@ -32,12 +32,18 @@
     margin: auto;
 }
 
-.active {
+.selected {
     background-image: linear-gradient(#F36263, #A9273C);
 }
 
+.active {
+    background-image: linear-gradient(#B3E85B, #46932A);
+    border-radius: 8px;
+    border: 2px solid;
+}
+
 .tile p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 0;
     font-weight: bold;
     text-shadow: -1px -1px 3px rgba(0, 0, 0, 0.35)
@@ -53,4 +59,8 @@
     z-index: -1;
     border-radius: inherit;
     background: linear-gradient(#F36263, #A9273C);
+}
+
+.active::before {
+    content: unset;
 }

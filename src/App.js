@@ -93,6 +93,7 @@ class App extends Component {
                             col={4}
                             data={board}
                             selected={selected}
+                            valid={valid}
                             handleClick={this.selectTile}
                         />
                     </div>

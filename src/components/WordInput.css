@@ -20,6 +20,7 @@
     max-width: 100% !important;
     margin-top: auto !important;
     flex-basis: 0 !important;
+    justify-content: space-between;
 }
 
 
