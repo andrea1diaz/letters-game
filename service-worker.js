@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/andrea1diaz/letters-game/precache-manifest.7f271c09c672242fd021de384f63e827.js"
+  "/letters-game/precache-manifest.b254f5c77aed850a664fed8a84bf9bd8.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/andrea1diaz/letters-game/index.html", {
+workbox.routing.registerNavigationRoute("/letters-game/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
