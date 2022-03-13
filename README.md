@@ -1,1 +1,2 @@
-# letters-game
+# Letters Game
+
