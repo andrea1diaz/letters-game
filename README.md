@@ -14,7 +14,7 @@ npm start
 ## Mobile View
 The game also supports mobile view
 
-## The code
+## The Code
 ### Creating board 
 The game can create random generated boards or load them from preset in files.
 
