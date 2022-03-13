@@ -11,6 +11,9 @@ npm install
 npm start
 ```
 
+## Mobile View
+The game also supports mobile view
+
 ## The code
 ### Creating board 
 The game can create random generated boards or load them from preset in files.
@@ -57,4 +60,26 @@ The custom board allows to set the number of tiles per row in the board, just ch
     valid={valid}
     handleClick={this.selectTile}
 />
+```
+
+### Detecting neighbors 
+For detecting tile neighbors and because the board is resizable, The program doesn't use a double loop approach to search them. A `O(n^2)` won't be optimal if the board game is too big or if the game itself is too complex. 
+
+To solve this problem in a more optimal way, the code transforms the index value of the tile to 2D coordinates and just checks if its in range to the last selected tile. This way the search for neighbors is achive in `O(1)`.
+
+```
+const isNeighbor = (index) => {
+    if (props.selected === undefined) return true;
+
+    var from_x = Math.floor(props.selected / props.col);
+    var from_y = props.selected % props.col;
+    var to_x = Math.floor(index/ props.col);
+    var to_y = index % props.col;
+
+    if ((from_x - 1 <= to_x && to_x <= from_x + 1) && (from_y - 1 <= to_y && to_y <= from_y + 1)) {
+        return true;
+    }
+
+    return false;
+}
 ```
