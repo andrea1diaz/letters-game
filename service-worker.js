@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/letters-game/precache-manifest.b254f5c77aed850a664fed8a84bf9bd8.js"
+  "/letters-game/precache-manifest.f09284e322091ff643014896d03234c4.js"
 );
 
 workbox.clientsClaim();

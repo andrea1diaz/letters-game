@@ -1,13 +1,13 @@
 {
-  "main.css": "/letters-game/static/css/main.b6b4de69.chunk.css",
-  "main.js": "/letters-game/static/js/main.62455a42.chunk.js",
-  "main.js.map": "/letters-game/static/js/main.62455a42.chunk.js.map",
+  "main.css": "/letters-game/static/css/main.7824ddab.chunk.css",
+  "main.js": "/letters-game/static/js/main.bc349b57.chunk.js",
+  "main.js.map": "/letters-game/static/js/main.bc349b57.chunk.js.map",
   "runtime~main.js": "/letters-game/static/js/runtime~main.a2927afb.js",
   "runtime~main.js.map": "/letters-game/static/js/runtime~main.a2927afb.js.map",
-  "static/js/2.8fe26185.chunk.js": "/letters-game/static/js/2.8fe26185.chunk.js",
-  "static/js/2.8fe26185.chunk.js.map": "/letters-game/static/js/2.8fe26185.chunk.js.map",
+  "static/js/2.0002b6c0.chunk.js": "/letters-game/static/js/2.0002b6c0.chunk.js",
+  "static/js/2.0002b6c0.chunk.js.map": "/letters-game/static/js/2.0002b6c0.chunk.js.map",
   "index.html": "/letters-game/index.html",
-  "precache-manifest.b254f5c77aed850a664fed8a84bf9bd8.js": "/letters-game/precache-manifest.b254f5c77aed850a664fed8a84bf9bd8.js",
+  "precache-manifest.f09284e322091ff643014896d03234c4.js": "/letters-game/precache-manifest.f09284e322091ff643014896d03234c4.js",
   "service-worker.js": "/letters-game/service-worker.js",
-  "static/css/main.b6b4de69.chunk.css.map": "/letters-game/static/css/main.b6b4de69.chunk.css.map"
+  "static/css/main.7824ddab.chunk.css.map": "/letters-game/static/css/main.7824ddab.chunk.css.map"
 }
