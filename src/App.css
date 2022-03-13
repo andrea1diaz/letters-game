@@ -12,11 +12,27 @@ html, body {
     overflow: visible;
 }
 
+.global-container-mobile {
+    display: flex;
+    height: calc(100vh - 100px);
+    align-items: stretch;
+    justify-content: center;
+    margin: 50px 10%;
+    overflow: visible;
+}
+
 .inner-container {
     max-height: 352px;
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.mobile-container {
+    max-height: 100vh;
+    width: calc(100vw - 10%);
+    display: flex;
+    flex-direction: column;
 }
 
 .item {
@@ -28,10 +44,40 @@ html, body {
 
 .sz-1 {
     max-width: 352px !important;
+    padding: calc(100vh - 662px) 0px;
+}
+
+.sz-1-m {
+    max-width: calc(100vw - 10%);
+    height: 100%;
+    display: flex;
+}
+
+
+.sz-3-mobile {
+    max-width: 100% !important;
+    align-self: flex-end;
+    margin-left: auto;
+    font-size: 2rem;
+}
+
+.item-mobile {
+    padding: 20px 0;
+    flex-grow: 0;
+    flex-basis: unset;
+    align-items: center;
+    justify-content: center;
 }
 
 .sz-2 {
     max-width: 352px !important;
+}
+
+.sz-2-m {
+    height: auto;
+    width: 100%;
+    max-width: 100% !important;
+    flex-grow: 0;
 }
 
 .sz-3 {
@@ -41,6 +87,11 @@ html, body {
 .container-2 {
     display: flex;
     flex-direction: column;
+}
+
+.cont-2 {
+    height: auto;
+    width: 100%;
 }
 
 @media only screen and (max-width: 800px) {

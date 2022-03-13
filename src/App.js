@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { isBrowser, isMobile } from 'react-device-detect';
 
 import Board from './components/Board';
 import WordInput from './components/WordInput';
@@ -79,16 +80,16 @@ class App extends Component {
         const { board, selected, word, valid, width } = this.state;
 
         return (
-            <div className="global-container">
-                <div className="inner-container">
-                    {width <= 768 && (
-                        <div className="sz-3">
+            <div className={`${isMobile ? 'global-container-mobile' : 'global-container'}`}>
+                <div className={`${isMobile ? 'mobile-container' : 'inner-container'}`}>
+                    {(width <= 768 || isMobile) && (
+                        <div className={`${isMobile ? 'sz-3-mobile' : 'sz-3'}`}>
                             <ResetButton
                                 handleReset={this.wordReset}
                             />
                         </div>
                     )}
-                    <div className="item sz-1">
+                    <div className={`${isMobile ? "item-mobile sz-1-m": "item sz-1"}`}>
                         <Board
                             col={4}
                             data={board}
@@ -97,8 +98,8 @@ class App extends Component {
                             handleClick={this.selectTile}
                         />
                     </div>
-                    <div className="item sz-2 container-2">
-                        {width > 768 && (
+                    <div className={`${isMobile ? "item-mobile sz-2-m cont-2": "item sz-2 container-2"}`}>
+                        {(width > 768 && isBrowser) && (
                             <ResetButton
                                 handleReset={this.wordReset}
                             />

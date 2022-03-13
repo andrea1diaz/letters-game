@@ -50,11 +50,11 @@ generateBoard = (size) => {
 ### Number of tiles per row
 The custom board allows to set the number of tiles per row in the board, just change the columns number in the `Board` component.
 ```
-     <Board
-        col={4} // number of tiles per row
-        data={board}
-        selected={selected}
-        valid={valid}
-        handleClick={this.selectTile}
-    />
+<Board
+    col={4} // number of tiles per row
+    data={board}
+    selected={selected}
+    valid={valid}
+    handleClick={this.selectTile}
+/>
 ```

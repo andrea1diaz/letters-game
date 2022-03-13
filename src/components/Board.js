@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { isMobile } from 'react-device-detect';
 
 import './Board.css';
 
@@ -11,11 +12,9 @@ const Tile = (props) => {
         }
     })
 
-    console.log(props.valid, selected && props.valid)
-
     return (
         <div
-            className={`tile item ${selected && props.valid ? 'active' : selected && !props.valid ? 'selected' : ''}`}
+            className={`${isMobile ? 'item-m' : 'item'} tile ${selected && props.valid ? 'active' : selected && !props.valid ? 'selected' : ''}`}
             style={{cursor: `${props.isNeighbor && !selected ? 'pointer' : 'unset'}`}}
             key={props.index}
             onClick={() => {
@@ -47,7 +46,7 @@ const Board = (props) => {
     }
 
     return (
-        <div className="board-container" style={{maxWidth: `${(78 + 10) * props.col}px`}}>
+        <div className="board-container" style={isMobile ? {maxWidth: `${(200 + 20) * props.col}px`} : {maxWidth: `${(78 + 10) * props.col}px`}}>
             { props.data.map((value, index) => {
                 return (
                     <Tile

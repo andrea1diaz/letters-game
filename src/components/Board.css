@@ -15,6 +15,20 @@
     max-width: 70px;
 }
 
+.item-m {
+    margin: 10px !important;
+    text-align: center;
+    flex: 0 0 calc(25% - 21px);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 186px;
+}
+
+.item-m p{
+    font-size: 3.7rem !important;
+}
+
 .board-container .item::after{
     content: '';
     display: block;

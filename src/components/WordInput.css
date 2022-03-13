@@ -13,7 +13,7 @@
     margin-left: 15px;
 }
 
-.input-container {
+.input-container, .i-c-m {
     border: solid #A4A4A4 2px;
     padding: 13.5px !important;
     display: flex;
@@ -23,17 +23,31 @@
     justify-content: space-between;
 }
 
+.i-c-m {
+    padding: 40px !important;
+    height: 70px;
+    font-size: 1.6rem;
+}
+
 
 p {
     margin: 0;
 }
 
 .word {
-    font-size: 1.6rem;
     font-weight: bold;
     width: 80%;
     height: 31px;
     letter-spacing: 5px;
+}
+
+.word-m {
+    font-size: 3.7rem;
+    font-weight: bold;
+    width: 80%;
+    letter-spacing: 5px;
+    height: min-content;
+    align-self: center;
 }
 
 .word-valid {
